@@ -1,28 +1,20 @@
-import React from "react";
+// React
+import { useState } from "react";
 
-export const Question = (props) => {
-  const { question_title, descriptionP } = props;
-  const [show, setShow] = React.useState(false);
-  if (show) {
-    return (
-      <>
-        <div className='question-container'>
-          <div className='header'>
-            <h2>{question_title}</h2>
-            <button onClick={() => setShow(!show)}>-</button>
-          </div>
-          <p>{descriptionP}</p>
+const Question = ({ questionTitle, description }) => {
+  const [show, setShow] = useState(false);
+
+  return (
+    <section className='question-container'>
+      <div className='question-container__content'>
+        <div className='question-container__title'>
+          <h2>{questionTitle}</h2>
+          <button onClick={() => setShow(!show)}>{show ? "-" : "+"}</button>
         </div>
-      </>
-    );
-  } else {
-    return (
-      <>
-        <div className='header-hidden'>
-          <h2>{question_title}</h2>
-          <button onClick={() => setShow(!show)}>+</button>
-        </div>
-      </>
-    );
-  }
+        {show && <p>{description}</p>}
+      </div>
+    </section>
+  );
 };
+
+export default Question;
