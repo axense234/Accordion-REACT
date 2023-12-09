@@ -27,7 +27,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   padding: 2rem;
   border: 3px solid black;
   border-radius: 1rem;
@@ -93,6 +93,7 @@ html {
   padding: 0.5rem 1rem;
   font-size: 2rem;
   font-weight: bolder;
+  border: 1px solid black;
 
   transition: transform 0.1s ease-in;
 }

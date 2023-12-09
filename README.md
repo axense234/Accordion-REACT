@@ -31,6 +31,8 @@ npm start
 
 ## **Version History**
 
+- 0.3
+  - Analyzed the code to gather to-do tasks and improved how things work a little.
 - 0.2
   - Improved React logic and also made the website look better
   - See [commit change](https://github.com/axense234/Accordion-REACT/commits/master) or See [release history](https://github.com/axense234/Accordion-REACT/releases)
