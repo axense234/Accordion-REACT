@@ -20,9 +20,20 @@ git clone https://github.com/axense234/Accordion-REACT.git
 
 ### Executing program
 
+- **Using NPM**
+
 ```
 npm install
 npm start
+```
+
+- **Using Docker**
+
+```
+docker build -t accordion-react:0.3.0 .
+docker stop accordion-react-app
+docker rm accordion-react-app
+docker run -d -p 3000:3000 --name accordion-react-app accordion-react:0.3.0
 ```
 
 ## **Authors**
